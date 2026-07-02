@@ -3,162 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Cyber Profile</title>
+<title>System Profile</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Consolas, monospace;
-}
-
 body{
+    margin:0;
+    font-family:Consolas, monospace;
     background:#050505;
     color:#00ff88;
+}
+
+.nav{
     display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    padding:20px;
-    background-image:
-        linear-gradient(rgba(0,255,100,.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0,255,100,.05) 1px, transparent 1px);
-    background-size:30px 30px;
-}
-
-.card{
-    width:100%;
-    max-width:420px;
-    background:#111;
-    border:1px solid #00ff88;
-    border-radius:12px;
-    box-shadow:0 0 20px rgba(0,255,100,.2);
-    overflow:hidden;
-}
-
-.header{
-    padding:25px;
-    text-align:center;
+    justify-content:space-around;
+    padding:15px;
     border-bottom:1px solid #00ff88;
 }
 
-.header h1{
-    font-size:28px;
+.nav a{
+    color:#00ff88;
+    text-decoration:none;
 }
 
-.header p{
-    color:#66ffbb;
-    margin-top:8px;
-}
-
-.section{
+.card{
+    max-width:500px;
+    margin:40px auto;
     padding:20px;
+    border:1px solid #00ff88;
+    border-radius:12px;
 }
 
 .info{
     display:flex;
     justify-content:space-between;
-    padding:12px 0;
-    border-bottom:1px solid rgba(0,255,100,.15);
+    padding:10px 0;
+    border-bottom:1px solid rgba(0,255,100,.2);
 }
 
-.label{
-    color:#66ffbb;
-}
-
-.value{
-    text-align:right;
-}
-
-.footer{
-    padding:15px;
-    text-align:center;
-    color:#00aa66;
-    font-size:14px;
-}
-
-.cursor{
-    animation:blink 1s infinite;
-}
-
-@keyframes blink{
-    50%{
-        opacity:0;
-    }
-}
-
-@media (max-width:480px){
-
-.info{
-    flex-direction:column;
-    gap:5px;
-}
-
-.value{
-    text-align:left;
-}
-
-.header h1{
-    font-size:24px;
-}
-
-}
+.label{ color:#66ffbb; }
 </style>
 
 </head>
+
 <body>
 
+<div class="nav">
+    <a href="index.html">INFO</a>
+    <a href="photos.html">PHOTOS</a>
+</div>
+
 <div class="card">
+    <h2>> USER DATA</h2>
 
-<div class="header">
-<h1>> ACCESS GRANTED<span class="cursor">_</span></h1>
-<p>Cybersecurity Profile</p>
-</div>
-
-<div class="section">
-
-<div class="info">
-<div class="label">Name</div>
-<div class="value">Nicolas Postalkov</div>
-</div>
-
-<div class="info">
-<div class="label">Age (2026)</div>
-<div class="value">15</div>
-</div>
-
-<div class="info">
-<div class="label">Date of Birth</div>
-<div class="value">11 October 2011</div>
-</div>
-
-<div class="info">
-<div class="label">Country</div>
-<div class="value">Czech Republic</div>
-</div>
-
-<div class="info">
-<div class="label">City</div>
-<div class="value">Brno – Moravany</div>
-</div>
-
-<div class="info">
-<div class="label">School</div>
-<div class="value">ZSHorni (Brno – Štýřice)</div>
-</div>
-
-<div class="info">
-<div class="label">Home</div>
-<div class="value">Moravany - U rybníka 153/3</div>
-</div>
-
-</div>
-
-<div class="footer">
-SYSTEM STATUS: ONLINE • ENCRYPTION ENABLED
-</div>
+    <div class="info"><div class="label">Name</div><div>Nicolas Postalkov</div></div>
+    <div class="info"><div class="label">DOB</div><div>11 Oct 2011</div></div>
+    <div class="info"><div class="label">Country</div><div>Czech Republic</div></div>
+    <div class="info"><div class="label">City</div><div>Brno – Moravany</div></div>
+    <div class="info"><div class="label">School</div><div>ZSHorni</div></div>
 
 </div>
 
